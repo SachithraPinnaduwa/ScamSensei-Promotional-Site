@@ -1,29 +1,30 @@
 import { FaGithub ,FaLinkedin} from "react-icons/fa";
-function TeamMember({image,name}) {
+function TeamMember({image,name,position,contribution}) {
   return (
    
       
       
         
       <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700 ">
-          <a href="#">
+        <div className="flex-shrink-0 w-48 h-48 mx-auto ">
+          
             <img
-              className=" rounded-lg sm:rounded-none sm:rounded-l-lg mx-auto"
+              className=" rounded-lg sm:rounded-none sm:rounded-l-lg "
               src={image}
-              alt="Bonnie Avatar"
-              width={300}
+              alt="Avatar"
+              
             />
-          </a>
+         
+          </div>
           <div className="p-5">
             <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
               <a href="#">{name}</a>
             </h3>
             <span className="text-gray-500 dark:text-gray-400">
-              CEO & Web Developer
+              {position}
             </span>
             <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-              Bonnie drives the technical strategy of the flowbite platform and
-              brand.
+             {contribution}
             </p>
             <ul className="flex space-x-4 sm:mt-0">
               <li>

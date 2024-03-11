@@ -8,6 +8,38 @@ import Gayana from '../assets/gayana.jpg'
 import Oshani from '../assets/oshani.jpg'
 import Sandali from '../assets/sandali.jpg'
 function About() {
+  const team = [
+    {
+      name: "Ottarachige Eranga",
+      image: Eranga,
+      position:"Leader of the team",
+      contribution:"Lead the team to develop the project and manage the team. He is responsible for arranging the meetings and managing the project."
+    },
+    {
+      name: "Oshani",
+      image: Oshani,
+      position:"UI/UX Designer",
+      contribution:"Design the user interface and make the website of the project user friendly."
+    },
+    {
+      name: "Scahithra Pinnaduwa",
+      image: Sachithra,
+      position:"Marketing Manager",
+      contribution:"Promote the project and make the project popular among the users by using socialmedia and custom website."
+    },
+    {
+      name: "Gayana Waragetiya",
+      image: Gayana,
+      position:"Frontend Developer",
+      contribution:"Develop the front end of the project and add frontend features to the project."
+    },
+    {
+      name: "Sandali Sawmindi",
+      image: Sandali,
+      position:"Backend Developer",
+      contribution:"Develop the backend of the project and add backend features to the project like authentication and database management."
+    },
+  ];
   return (
     <div>
         <Header />
@@ -24,11 +56,10 @@ function About() {
         </p>
       </div>
       <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-     <TeamMember image={Eranga} name={"Ottarachige Eranga"}/>
-     <TeamMember image={Oshani} name={"Oshani"}/>
-     <TeamMember image={Sachithra} name={"Scahithra Pinnaduwa"}/>
-     <TeamMember image={Gayana} name={"Gayana Waragetiya"}/>
-     <TeamMember image={Sandali} name={"Sandali Sawmindi"}/>
+        {team.map((member,key) => (
+          <TeamMember key={key} image={member.image} name={member.name} position={member.position} contribution={member.contribution}/>
+        ))}
+    
      </div>
   </div>
 </section>

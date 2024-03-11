@@ -29,6 +29,21 @@ function Home() {
     auth.setIsNewsletterSubmitting(true);
   };
 
+  const feature = [
+    {
+      title: "Secure",
+      description: "We strictly enforce privacy and security measures to protect your data.",
+    },
+    {
+      title: "Reliable",
+      description: "We are committed to providing a reliable and secure platform for your data.",
+    },
+    {
+      title: "User Friendly",
+      description: "Our platform is easy to use and navigate, making it easy to manage your data.",
+    },
+  ];
+
   return (
     <div>
         <Header />
@@ -37,11 +52,11 @@ function Home() {
   
    <HeroSection scrollToSection={scrollToSection}/>
    <div className="min-h-[100vh] bg-white dark:bg-gray-900">
-   <Feature mySectionRef={mySectionRef} order1={"order-2"} order2={"order-1"}/>
+   <Feature mySectionRef={mySectionRef} order1={"order-2"} order2={"order-1"} feature={feature[0]}/>
    
    </div>
    <div className="min-h-[100vh] bg-white dark:bg-gray-900">
-   <Feature mySectionRef={mySectionRef} order1={"order-1"} order2={"order-2"}/>
+   <Feature mySectionRef={mySectionRef} order1={"order-1"} order2={"order-2"} feature={feature[1]}/>
    
    </div>
    <div className=" bg-gray-900 dark:bg-gray-900">

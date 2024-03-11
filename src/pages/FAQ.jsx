@@ -13,26 +13,45 @@ const FAQAccordion = () => {
   const questions = [
     {
       question: "When will my order arrive?",
-      answer: "Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation."
+      subq:[["question1","question2","question3"],
+      ["question4","question5","question6"],
+      ],
+      answer: [["Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "If you have any questions about your order, please contact us at ", "If you have any questions about your order, please contact us at "],
+      ["Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "If you have any questions about your order, please contact us at ", "If you have any questions about your order, please contact us at "]],
     },
     {
       question: "How do I track my order?",
-      answer: "Once shipped, you’ll get a confirmation email that includes a tracking number and additional information regarding tracking your order."
+      subq:[["question7","question8","question9"],
+      ["question10","questio11","question12"],
+      ],
+      answer: [["Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "If you have any questions about your order, please contact us at ", "If you have any questions about your order, please contact us at "],
+      ["Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "If you have any questions about your order, please contact us at ", "If you have any questions about your order, please contact us at "]],
     },
     {
       question: "What’s your return policy?",
-      answer: "We allow the return of all items within 30 days of your original order’s date. If you’re interested in returning your items, send us an email with your order number and we’ll ship a return label."
+      subq:[["question1","question2","question3"],
+      ["question4","question5","question6"],
+      ],
+      answer: [["Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "If you have any questions about your order, please contact us at ", "If you have any questions about your order, please contact us at "],
+      ["Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation.",
+      "If you have any questions about your order, please contact us at ", "If you have any questions about your order, please contact us at "]],
     },
-    // Add more questions as needed
+   
   ];
 
   return (
     <>
     <Navbar />
     <main className="p-4 bg-white sm:p-6 dark:bg-gray-800 min-h-[100vh]">
-      <div className="mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-screen-xl ">
         <h2 className="text-xl font-semibold text-gray-900 mb-2 dark:text-white">FAQ - Read this before you email us any question</h2>
         <ul className="flex flex-col">
+
           {questions.map((item, idx) => (
             <AccordionItem item={item} idx={idx} key={idx} handleClick={handleClick} activeTab={activeTab} />
           ))}

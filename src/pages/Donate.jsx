@@ -3,6 +3,41 @@ import Footer from "../components/Footer";
 import DonateComponent from "../components/Donate";
 
 function Donate() {
+  const donate = [
+    {
+      title: "Basic Donation",
+      subtitle: "For ones intrested in supporting the project and helping us to keep the project alive.",
+      amount: 10,
+      features: [
+        [ "You help us to keep the project alive",true],
+        ["You help us improve the project with new features",true],
+        ["Get the premium support from the team.",false],
+        ["Get access to the beta features.",false],
+      ],
+    },
+    {
+      title: "Standard Donation",
+      subtitle:"For ones intrested in supporting the project to keep it alive and get the premium support.",
+      amount: 50,
+      features: [
+        [ "You help us to keep the project alive",true],
+        ["You help us improve the project with new features",true],
+        ["Get the premium support from the team.",true],
+        ["Get access to the beta features.",false],
+      ],
+    },
+    {
+      title: "Premium Donation",
+      subtitle:"For ones intrested in supporting the project and get the premium support and beta features.",
+      amount: 80,
+      features: [
+       [ "You help us to keep the project alive",true],
+        ["You help us improve the project with new features",true],
+        ["Get the premium support from the team.",true],
+        ["Get access to the beta features.",true],
+      ],
+    },
+  ];
   return (
     <>
       <Header />
@@ -18,9 +53,17 @@ function Donate() {
             </p>
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-            <DonateComponent title={"Basic Donation"} amount={10}/>
-            <DonateComponent title={"Standard Donation" }amount={50}/>
-            <DonateComponent title={"Premium Donation"} amount={80}/>
+            {donate.map((donate, key) => (
+              <DonateComponent
+                key={key}
+                title={donate.title}
+                subtitle={donate.subtitle}
+                amount={donate.amount}
+                features={donate.features}
+
+              />
+            ))}
+         
             
           </div>
         </div>
