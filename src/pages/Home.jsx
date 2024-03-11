@@ -6,6 +6,8 @@ import NewsletterSignUp from '../components/NewsLetter'
 import Footer from '../components/Footer'
 import { useRef,useEffect } from 'react'
 import { useAuth } from '../hooks/context'
+import submitscam from "../assets/createpost2.png";
+import chatbot from "../assets/chatbotpage4.png";
 
 function Home() {
 
@@ -31,17 +33,20 @@ function Home() {
 
   const feature = [
     {
-      title: "Secure",
-      description: "We strictly enforce privacy and security measures to protect your data.",
+      title: "Local Insights, Global Vigilance",
+      description: "Navigate your travels smarter with ScamSensei's user-powered Scam Radar. Whether you're a few blocks from home or halfway across the world, stay one step ahead with our location-based scam feed. Our platform lets you:",
+      subdescription: ["Post Scams: Share your experiences directly on ScamSensei. Your insights can be the beacon that guides fellow travelers safely.",
+    "Discover Locally: Filter scams by location to uncover specific threats in your vicinity. Knowledge is your local shield against deceit.",
+  "Vote for Awareness: Elevate the most pressing scams with your upvote. The most notorious schemes rise to the top, helping the community prioritize caution."],
+      image: submitscam,
     },
     {
-      title: "Reliable",
-      description: "We are committed to providing a reliable and secure platform for your data.",
+      title: "Chatbot Intelligence at Your Service",
+      description: "Navigate the complexities of travel with a companion that's always ready to guide you. ScamSensei's chatbot is more than just a program; it's a fine-tuned guardian powered by advanced GPT models and enriched with a vast database of scams collected meticulously by our dedicated team. Whether you're looking to identify a suspicious offer or need quick tips to secure your travel plans, our chatbot is at your beck and call, providing personalized support with precision and understanding. Dive into a dialogue with ScamSensei's chatbot and experience real-time assistance that’s as informed as it is intuitive.",
+      subdescription: [],
+      image: chatbot,
     },
-    {
-      title: "User Friendly",
-      description: "Our platform is easy to use and navigate, making it easy to manage your data.",
-    },
+    
   ];
 
   return (
@@ -50,13 +55,13 @@ function Home() {
  
  <main>
   
-   <HeroSection scrollToSection={scrollToSection}/>
+   <HeroSection />
    <div className="min-h-[100vh] bg-white dark:bg-gray-900">
-   <Feature mySectionRef={mySectionRef} order1={"order-2"} order2={"order-1"} feature={feature[0]}/>
+   <Feature  order1={"order-2"} order2={"order-1"} feature={feature[0]} />
    
    </div>
    <div className="min-h-[100vh] bg-white dark:bg-gray-900">
-   <Feature mySectionRef={mySectionRef} order1={"order-1"} order2={"order-2"} feature={feature[1]}/>
+   <Feature  order1={"order-1"} order2={"order-2"} feature={feature[1]}/>
    
    </div>
    <div className=" bg-gray-900 dark:bg-gray-900">

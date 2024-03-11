@@ -18,7 +18,7 @@ const AccordionItem = ({ item, idx, handleClick, activeTab }) => {
     <li key={idx} className=" my-2 shadow-lg ">
       <div
         onClick={() => handleClick(idx)}
-        className="flex justify-between items-center font-semibold p-3 cursor-pointer text-gray-900 dark:text-white bg-white dark:bg-gray-800 shadow-md rounded-lg  border-2 border-cyan-50"
+        className="flex justify-between items-center font-semibold p-3 cursor-pointer text-gray-900 dark:text-slate-300 bg-white dark:bg-gray-800 shadow-md rounded-lg  border-2 border-cyan-50"
       >
         <div>
           {item.question}

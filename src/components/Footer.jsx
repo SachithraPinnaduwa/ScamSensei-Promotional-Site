@@ -24,23 +24,24 @@ const Footer = () => {
                 Flowbite
               </span> */}
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 sm:mt-6">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Resources
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="https://flowbite.com" className="hover:underline">
-                    Flowbite
+                  <a href="https://www.sltda.gov.lk/" className="hover:underline" target="_blank">
+                    SLTDA
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="https://https://www.srilanka.travel/"
                     className="hover:underline"
+                    target="_blank"
                   >
-                    Tailwind CSS
+                    Sri Lanka Travel
                   </a>
                 </li>
               </ul>
@@ -52,18 +53,20 @@ const Footer = () => {
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://github.com/SachithraPinnaduwa"
                     className="hover:underline "
+                    target="_blank"
                   >
                     Github
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="https://www.linkedin.com/in/sachithra-pinnaduwa-566703242/"
                     className="hover:underline"
+                    target="_blank"
                   >
-                    Discord
+                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -74,12 +77,12 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" target="_blank">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline" target="_blank">
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -90,9 +93,9 @@ const Footer = () => {
         <hr className="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 " />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2022{" "}
+            © 2024{" "}
             <a href="https://flowbite.com" className="hover:underline">
-              Flowbite™
+              ScamSensei™
             </a>
             . All Rights Reserved.
           </span>
