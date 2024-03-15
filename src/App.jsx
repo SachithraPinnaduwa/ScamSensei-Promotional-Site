@@ -11,6 +11,8 @@ import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 import FAQAccordion from './pages/FAQ';
 import { AuthProvider } from './hooks/context';
+import LegalPage from './pages/LegalPage';
+import TermsAndConditionsPage from './pages/TermsConditions';
 function App() {
   
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQAccordion />} />
          <Route path="*" element={<NotFound />} />  
+         <Route path='/legal' element={<LegalPage/>} />
+         <Route path='/terms' element={<TermsAndConditionsPage/>} />
 
       </Routes>
     </Router>

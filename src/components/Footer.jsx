@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/upscaledlogo.png";
 import { FaXTwitter,FaFacebook,FaLinkedin } from "react-icons/fa6";
 
@@ -74,16 +75,22 @@ const Footer = () => {
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Legal
+                
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline" target="_blank">
-                    Privacy Policy
-                  </a>
+                  
+                   
+                    <Link to="/legal" className="hover:underline">
+                      Privacy Policy
+                </Link>
+                  
                 </li>
                 <li>
                   <a href="#" className="hover:underline" target="_blank">
+                  <Link to="/terms" className="hover:underline">
                     Terms &amp; Conditions
+                </Link>
                   </a>
                 </li>
               </ul>
