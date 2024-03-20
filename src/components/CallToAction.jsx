@@ -23,11 +23,13 @@ const CallToAction = () => {
                  Our innovative platform offers an interactive chatbot, real-time scam alerts, and a supportive community to equip you with the knowledge you need to prevent tourist scams.
                  Empower your journey with the click of a button – explore ScamSensei now and travel with confidence.
                 </p>
+                <a href="https://scamsensei.vercel.app/signup" target="_blank">
                 <button type="button"
                   className="rounded-full border-2  px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:border-gray-300 hover:bg-gray-300 hover:bg-opacity-10 hover:text-gray-300 focus:border-gray-300 focus:text-gray-300 focus:outline-none focus:ring-0 active:border-gray-400 active:text-gray-400"
                   data-te-ripple-init data-te-ripple-color="light">
                   Sign up now
                 </button>
+                </a>
               </div>
             </div>
           </div>

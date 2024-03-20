@@ -35,7 +35,7 @@ const Feature = ({ order1,order2,feature }) => {
                 ))}
               </ul>
               <a
-                href="#"
+                href="https://scamsensei.vercel.app" target="_blank"
                 className="inline-flex items-center text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-800"
               >
                 Join Now
