@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/upscaledlogo.png";
-import { FaXTwitter,FaFacebook,FaLinkedin } from "react-icons/fa6";
+import { FaGithub,FaFacebook,FaLinkedin } from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
@@ -16,14 +17,12 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className=" md:m-auto sm:m-auto lg:ml-10 sm:py-5 mb-10 md:mb-0 ">
             <a
-              href="#"
+              href="https://scamsensei.vercel.app/"
               className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white"
             >
               <img src={logo} className="h-40" alt="ScamSensei Logo" />
             </a>
-            {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span> */}
+            
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 sm:mt-6">
             <div>
@@ -101,7 +100,7 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="https://flowbite.com" className="hover:underline">
+            <a href="#" className="hover:underline">
               ScamSensei™
             </a>
             . All Rights Reserved.
@@ -110,22 +109,22 @@ const Footer = () => {
            
            
             <a
-              href="#"
+              href="https://www.linkedin.com/in/sachithra-pinnaduwa-566703242/" target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <FaLinkedin />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/sachithra.pinnaduwa.52" target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
              <FaFacebook  />
             </a>
             <a
-              href="#"
+              href="https://github.com/SachithraPinnaduwa" target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
-              <FaXTwitter />
+              <FaGithub />
             </a>
           </div>
         </div>
