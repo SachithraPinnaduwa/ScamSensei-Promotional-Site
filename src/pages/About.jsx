@@ -10,13 +10,13 @@ import Sandali from '../assets/sandali.jpg'
 function About() {
   const team = [
     {
-      name: "Ottarachige Eranga",
+      name: "Isuru Eranga",
       image: Eranga,
       position:"Leader of the team",
       contribution:"Lead the team to develop the project and manage the team. He is responsible for arranging the meetings and managing the project."
     },
     {
-      name: "Oshani",
+      name: "Oshani Kavindya",
       image: Oshani,
       position:"UI/UX Designer",
       contribution:"Design the user interface and make the website of the project user friendly."
@@ -25,10 +25,10 @@ function About() {
       name: "Scahithra Pinnaduwa",
       image: Sachithra,
       position:"Marketing Manager",
-      contribution:"Promote the project and make the project popular among the users by using socialmedia and custom website."
+      contribution:"Promote the project and make the project popular among the users by using social media and a custom website."
     },
     {
-      name: "Gayana Waragetiya",
+      name: "Gayana Waraketiya",
       image: Gayana,
       position:"Frontend Developer",
       contribution:"Develop the front end of the project and add frontend features to the project."
@@ -37,7 +37,7 @@ function About() {
       name: "Sandali Sawmindi",
       image: Sandali,
       position:"Backend Developer",
-      contribution:"Develop the backend of the project and add backend features to the project like authentication and database management."
+      contribution:"Develop the project's backend and add backend features to the project like authentication and database management."
     },
   ];
   return (
@@ -51,7 +51,7 @@ function About() {
           Our Team
         </h2>
         <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-          Get to to know the team behind the project. We are a group of passionate individuals who are dedicated to make the project a success.
+          Get to know the team behind the project. We are a group of passionate individuals who are dedicated to making this project a success.
         </p>
       </div>
       <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
