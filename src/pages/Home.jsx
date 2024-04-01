@@ -54,13 +54,14 @@ function Home() {
         <Header />
  
  <main>
-  
+ <div className="min-h-[10vh] bg-white dark:bg-gray-900 ">
    <HeroSection />
-   <div className="min-h-[100vh] bg-white dark:bg-gray-900">
+   </div>
+   <div className="min-h-[10vh] bg-white dark:bg-gray-900">
    <Feature  order1={"order-2"} order2={"order-1"} feature={feature[0]} />
    
    </div>
-   <div className="min-h-[100vh] bg-white dark:bg-gray-900">
+   <div className="min-h-[10vh] bg-white dark:bg-gray-900">
    <Feature  order1={"order-1"} order2={"order-2"} feature={feature[1]}/>
    
    </div>

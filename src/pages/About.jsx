@@ -22,7 +22,7 @@ function About() {
       contribution:"Design the user interface and make the website of the project user friendly."
     },
     {
-      name: "Scahithra Pinnaduwa",
+      name: "Sachithra Pinnaduwa",
       image: Sachithra,
       position:"Marketing Manager",
       contribution:"Promote the project and make the project popular among the users by using social media and a custom website."
